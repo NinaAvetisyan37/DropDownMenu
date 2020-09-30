@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+}
+
+a,button{
+  font-family: "Poppins", sans-serif;
+  margin: 15px;
+}
+
+.dropdown{
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#ysu,#faculties,#education,#student{
+  position: relative;
+}
+
+#ysu ul,#faculties ul,#education ul,#student ul{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+  opacity: 0;
+ }
+
+#ysu li,#faculties li,#education li,#student li{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ysu li:hover,#faculties li:hover,#education li:hover,#student li:hover{
+  background-color: #00CED1 ;
+}
+
+#ysu a,#faculties a,#education a,#student a {
+  color: black;
+}
+
+.dropdown button{
+  background:none;
+  border: 2px solid #B0E0E6;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#ysu button:focus + ul,#faculties button:focus + ul,
+#education button:focus + ul,#student button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+}
+nav{
+  margin-top: :10px;
+  width: 100%;
+  height: 60%;
+  background-color: #008B8B  ;
+}
+
+img{
+  width: 100%;
+}
+
+
+
+
